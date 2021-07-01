@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Predicton</title>
+</head>
+<body>
+    <h1> Enter the detail to check your heart </h1>
+        <form action="http://127.0.0.1:5000/diagnosis" method="POST">
+        <label>name: </label>
+        <input type="name" name = "name" placeholder="enter your name">
+        <br><br>
+        <label>Age: </label>
+        <input type="number" name = "Age" placeholder="enter your Age">
+        <br><br>
+        <label> cp: </label>
+        <input type="number" name = "cp" placeholder="enter your cp (chest pain) level">
+        <br><br>
+        <label>gender: </label>
+        <input type="number" name = "gender" placeholder="enter your gender">
+        <br><br>
+        <label>trestbps: </label>
+        <input type="number" name = "trestbps" placeholder="enter your trestbps">
+        <br><br>
+        <label>chol: </label>
+        <input type="number" name = "chol" placeholder="enter your cholestrol level">
+        <br><br>
+        <label>fbs: </label>
+        <input type="number" name = "fbs" placeholder="enter your fbs (fasting blood sugar)">
+        <br><br>
+        <label>restecg: </label>
+        <input type="number" name = "restecg" placeholder="enter your restecg">
+        <br><br>
+        <label>thalach: </label>
+        <input type="number" name = "thalach" placeholder="enter your thalsh ">
+        <br><br>
+        <label>slope: </label>
+        <input type="number" name = "slope" placeholder="enter your slope">
+        <br><br>
+
+        <input type="submit" name = "submit", value="submit">
+        <br><br>
+        <input type="reset" name="reset" value="reset">
+        <br><br>
+        {{prediction}}
+</body>
+</html>
